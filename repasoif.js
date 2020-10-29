@@ -50,23 +50,23 @@ var africa = ["Marruecos", "Egipto", "Nigeria", "Kenia", "Ghana"];
 var oceania = ["Australia", "Nueva Zelanda", "Samoa", "Fiji", "Tonga"];
 function elContinente(pais) {
     if (pais === "España" || pais === "Francia" || pais === "Alemania" || pais === "Inglaterra" || pais === "Holanda") {
-        return "Europa";
+        console.log("Europa");
     }
     if (pais === "China" || pais === "India" || pais === "Indonesia" || pais === "Tailandia" || pais === "Filipinas") {
-        return "Asia";
+        console.log("Asia");
     }
     if (pais === "Canadá" || pais === "Chile" || pais === "EEUU" || pais === "Méjico" || pais === "Argentina") {
-        return "América";
+        console.log("América");
     }
     if (pais === "Marruecos" || pais === "Egipto" || pais === "Nigeria" || pais === "Kenia" || pais === "Ghana") {
-        return "África";
+        console.log("África");
     }
     if (pais === "Australia" || pais === "Nueva Zelanda" || pais === "Samoa" || pais === "Fiji" || pais === "Tonga") {
-        return "Oceanía";
+        console.log("Oceanía");
     }
 }
-console.log(elContinente("España"));
-console.log(elContinente("Australia"));
-console.log(elContinente("EEUU"));
-console.log(elContinente("China"));
-console.log(elContinente("Marruecos"));
+elContinente("España");
+elContinente("Australia");
+elContinente("EEUU");
+elContinente("China");
+elContinente("Marruecos");

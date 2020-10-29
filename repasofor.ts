@@ -1,16 +1,13 @@
-// Función que imprima los números impares existentes hasta el número indicado como parámetro de entrada.
+// Función que imprima (console.log) los números impares existentes hasta el número indicado como parámetro de entrada.
 
-function impImpares (k:number):number[] {
-    let resulImpar:number[] = [];
+function impImpares (k:number) {
     for (let i = 0; i < k; i++) {  
-        if (i%2 == 1) {    
-            resulImpar.push(i);
-        }
+        if (i%2 == 1) {  
+        console.log(i);  
+        }  
     }
-    return resulImpar;
 }
-console.log(impImpares(10));
-console.log("-----------");
+impImpares(10);
 
 // Realizar una función que reciba como parámetro de entrada un array y de salida el array revertido.
 
@@ -52,20 +49,20 @@ function sumaChar (k:string[]):number {
 console.log(sumaChar(["Holi", "Bai"]));
 console.log("-----------");
 
-// El numero es par o es impar reto 9
+// Funcion que te imprima por consola si el numero introducido como parámetro es par o es impar.
 
-function sumaParImpar (k:string[]):number {
-    let suma:number = 0;
-    for (var i = 0; i < k.length; i++) {
-        suma += k[i].length        
-    }
-    if (suma%2 == 0) {
+function esParoImpar(k:number) {
+    if (k%2 == 0) {
         console.log("El número es par");
     } else {
         console.log("El número es impar");
     }
-    return suma;
-}
-console.log(sumaParImpar(["Casa", "Coche", "Ciudad", "Cesta"]));
-console.log(sumaParImpar(["Barco", "Baca", "Bicicleta", "Balon", "Bisiesto", "Brasil"]));
-console.log(sumaParImpar(["Venezuela", "Veneno", "Voltaje"]));
+}       
+esParoImpar(10);
+console.log("-----------");
+
+// El numero suma de caracteres del Array es par o es impar.
+
+esParoImpar(sumaChar(["Casa", "Coche", "Ciudad", "Cesta"]));
+esParoImpar(sumaChar(["Barco", "Baca", "Bicicleta", "Balon", "Bisiesto", "Brasil"]));
+esParoImpar(sumaChar(["Venezuela", "Veneno", "Voltaje"]));
